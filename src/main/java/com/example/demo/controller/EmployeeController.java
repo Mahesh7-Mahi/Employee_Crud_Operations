@@ -66,6 +66,7 @@ public class EmployeeController {
 	public String showAllEmployees(
 			@PageableDefault(page=0,size=3)Pageable pageable,
 			Model model) {
+		log.info("ENTERD INTO THE SHOWALLEMPLOYEES METHOD");
 		Page<Employee> page=empservice.getAllEmployees(pageable);
 		List<Employee> list=page.getContent();
 		
