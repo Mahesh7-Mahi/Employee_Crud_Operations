@@ -45,7 +45,7 @@ public class EmployeeController {
 			String msg="Employee '"+empid+"' saved";
 			model.addAttribute("msg", msg);
 		}catch(Exception e) {
-			log.info("UNABLE TO PROCESS SAVE EMPLOYEE {}",e.getMessage());
+			log.info("UNABLE TO PROCESS YOUR REQUEST AND WE UNABLE TO SAVE EMPLOYEE {}",e.getMessage());
 			e.printStackTrace();
 		}
 		log.info("ABOUT TO RETURN RESPONSE FROM SAVE EMPLOYEE METHOD");
