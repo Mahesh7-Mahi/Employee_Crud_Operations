@@ -41,7 +41,7 @@ public class EmployeeController {
 		log.info("ENTERD INTO THE SAVE EMPLOYEE METHOD");
 		try{
 			Integer empid=empservice.saveEmployee(employee);
-			log.info("EMPLOYEE SAVED");
+			log.info("EMPLOYEE SAVED SUCCESSFULLY");
 			String msg="Employee '"+empid+"' saved";
 			model.addAttribute("msg", msg);
 		}catch(Exception e) {
