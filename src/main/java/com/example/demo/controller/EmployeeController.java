@@ -87,7 +87,7 @@ public class EmployeeController {
 			empservice.deleteEmployee(eid);
 			List<Employee> list=empservice.getAllEmployees();
 			model.addAttribute("list",list);
-			log.info("EMPLOYEE DELETED");
+			log.info("EMPLOYEE DELETED SUCCESSFULLY");
 			String msg="Employee '"+eid+"' deleted from db";
 			model.addAttribute("msg",msg);	
 		}catch(EmployeeNotFoundException e) {
